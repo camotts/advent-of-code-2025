@@ -1,13 +1,11 @@
 use nom::{
-    branch::alt,
     bytes::complete::tag,
     sequence::tuple,
-    character::complete::{line_ending, anychar, digit1},
-    multi::{many1, separated_list1},
+    character::complete::{digit1},
+    multi::{separated_list1},
     combinator::map_res,
-    IResult, Parser,
+    IResult,
 };
-use std::str::FromStr;
 
 type Output = Vec<(i64, i64)>;
 

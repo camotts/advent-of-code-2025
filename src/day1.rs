@@ -1,10 +1,8 @@
 use nom::{
-    branch::alt,
-    bytes::complete::tag,
     sequence::tuple,
     character::complete::{line_ending, anychar, digit1},
-    multi::{many1, separated_list1},
-    IResult, Parser,
+    multi::{separated_list1},
+    IResult,
 };
 use std::str::FromStr;
 
